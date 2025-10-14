@@ -17,7 +17,7 @@ Hãy tưởng tượng bạn đang gửi một bộ lắp ráp mô hình quý gi
 
 Giao thức TCP được sử dụng ở tầng vận chuyển (OSI) đảm bảo cho dữ liệu gởi đi được tin cậy và xác thực giữa các nút mạng. Giao thức TCP phân chia dữ liệu thành các gói tin gọi là datagram. TCP gắn thêm phần header vào datagram. Phần header được mô tả trong hình vẽ bên dưới.
 
-![Ảnh Minh Họa Bắt Tay 3 Bước](/images/TCP-packet-format.jpg)
+![Ảnh Minh Họa Bắt Tay 3 Bước](TCP-packet-format.jpg)
 
 | **Trường** | **Mô tả** |
 |-------------|------------|
@@ -44,7 +44,7 @@ Tiếp Theo Chúng Ta Sẽ Nói Về Các Cơ Chế Trong TCP
 
 Điểm đặc trưng nhất của TCP chính là cơ chế thiết lập kết nối đáng tin cậy thông qua quy trình "bắt tay ba bước" (Three-Way Handshake). Quá trình này đảm bảo rằng cả hai thiết bị (máy gửi và máy nhận) đều sẵn sàng và đồng bộ trước khi bất kỳ dữ liệu thực tế nào được trao đổi.
 
-![Ảnh Minh Họa](/images/3way.png)
+![Ảnh Minh Họa](3way.png)
 
 Hãy hình dung quy trình này như một cuộc gọi điện thoại:
 
@@ -58,7 +58,7 @@ Sau khi ba bước này hoàn tất, một kết nối ổn định đã đượ
 
 ### Truyền Dữ Liệu
 
-![Ảnh Minh Họa](/images/data-transfer.jpg)
+![Ảnh Minh Họa](data-transfer.jpg)
 
 Khi kết nối đã sẵn sàng, TCP không gửi toàn bộ dữ liệu (ví dụ: một file ảnh lớn) cùng một lúc. Thay vào đó, nó thực hiện một quy trình rất tỉ mỉ:
 
@@ -96,7 +96,7 @@ Kiểm soát tắc nghẽn (Congestion Control): TCP có thể phát hiện các
 
 ## Khi Nào Chúng Ta Sử Dụng TCP?
 
-![Ảnh Minh Họa](/images/free-photo-of-when-text-on-dice.jpeg)
+![Ảnh Minh Họa](free-photo-of-when-text-on-dice.jpeg)
 
 Vì sự đáng tin cậy là ưu tiên hàng đầu, TCP là lựa chọn lý tưởng cho các ứng dụng mà ở đó mỗi bit dữ liệu đều quan trọng. Ví dụ:
 
