@@ -2,63 +2,63 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Phan Đình Tuấn</title>
-    <link>http://localhost:1313/phandinhtuan.dev/categories/blog/</link>
+    <link>https://pdtuan04.github.io/phandinhtuan.dev/categories/blog/</link>
     <description>Recent content in Blog on Phan Đình Tuấn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>pdtuan04@gmail.com (Phan Đình Tuấn)</managingEditor>
     <webMaster>pdtuan04@gmail.com (Phan Đình Tuấn)</webMaster>
     <copyright>© 2025 Phan Đình Tuấn. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/phandinhtuan.dev/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pdtuan04.github.io/phandinhtuan.dev/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>TCP: Giao Thức Đáng Tin Cậy Của Internet</title>
-      <link>http://localhost:1313/phandinhtuan.dev/posts/tcp/</link>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/tcp/</link>
       <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>http://localhost:1313/phandinhtuan.dev/posts/tcp/</guid>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/tcp/</guid>
       <description>TCP (Giao thức Điều khiển Truyền vận) là một giao thức Internet thiết yếu, đảm bảo dữ liệu được gửi đi một cách đáng tin cậy và đúng thứ tự bằng cách kiểm tra lỗi và tự động gửi lại các gói tin bị mất, nền tảng cho các dịch vụ quan trọng như duyệt web và email.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/tcp/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/tcp/featured.png" />
     </item>
     
     <item>
       <title>Config</title>
-      <link>http://localhost:1313/phandinhtuan.dev/posts/multithread/</link>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/multithread/</link>
       <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>http://localhost:1313/phandinhtuan.dev/posts/multithread/</guid>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/multithread/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/multithread/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/multithread/feature.png" />
     </item>
     
     <item>
       <title>Super cool article that I wrote</title>
-      <link>http://localhost:1313/phandinhtuan.dev/posts/javascriptbasic/</link>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/javascriptbasic/</link>
       <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>http://localhost:1313/phandinhtuan.dev/posts/javascriptbasic/</guid>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/javascriptbasic/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/javascriptbasic/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/javascriptbasic/featured.png" />
     </item>
     
     <item>
       <title>Super cool article that I wrote</title>
-      <link>http://localhost:1313/phandinhtuan.dev/posts/socket/</link>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/socket/</link>
       <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>http://localhost:1313/phandinhtuan.dev/posts/socket/</guid>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/socket/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/socket/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/socket/feature.png" />
     </item>
     
     <item>
       <title>Super cool article that I wrote</title>
-      <link>http://localhost:1313/phandinhtuan.dev/posts/udp_tcp/</link>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/udp_tcp/</link>
       <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>http://localhost:1313/phandinhtuan.dev/posts/udp_tcp/</guid>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/udp_tcp/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/udp_tcp/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/udp_tcp/featured.png" />
     </item>
     
   </channel>
