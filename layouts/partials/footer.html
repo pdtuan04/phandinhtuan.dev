@@ -1,0 +1,132 @@
+<style>
+    h4 {
+        color: var(--color-text-heading);
+        font-weight: 800;
+        line-height: 1.2;
+        letter-spacing: -0.025em;
+    }
+    h4 { font-size: 1.5rem; }
+    
+</style>
+<footer id="site-footer" class="py-10 print:hidden">
+    {{/* 3 cột ở trên */}}
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        {{/* Cột 1: Slogan */}}
+        <div class="text-center">
+          <h4 class="text-base font-semibold text-neutral-700 dark:text-neutral-300 mb-4">Slogan</h4>
+          <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            {{ .Site.Params.footer.slogan | default "Chia sẻ kiến thức, kết nối cộng đồng" }}
+          </p>
+        </div>
+    
+        {{/* Cột 2: Quick Links */}}
+        <div class="text-center">
+          {{ if .Site.Params.footer.showMenu | default true }}
+            {{ if .Site.Menus.footer }}
+              <nav class="flex flex-col">
+                <h4 class="text-base font-semibold text-neutral-700 dark:text-neutral-300 mb-4">Quick Links</h4>
+                <ul class="flex flex-col list-none space-y-2">
+                  {{ range .Site.Menus.footer }}
+                    <li>
+                      <a
+                        class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 text-neutral-500 dark:text-neutral-400 inline-flex items-center"
+                        href="{{ .URL }}"
+                        title="{{ .Title }}">
+                        {{ if .Pre }}
+                          <span {{ if and .Pre .Name }}class="mr-1"{{ end }}>
+                            {{ partial "icon.html" .Pre }}
+                          </span>
+                        {{ end }}
+                        {{ .Name | markdownify }}
+                      </a>
+                    </li>
+                  {{ end }}
+                </ul>
+              </nav>
+            {{ end }}
+          {{ end }}
+        </div>
+    
+        {{/* Cột 3: Contact */}}
+        <div class="text-center">
+          <h4 class="text-base font-semibold text-neutral-700 dark:text-neutral-300 mb-4">Contact</h4>
+          <div class="text-sm text-neutral-500 dark:text-neutral-400 space-y-2">
+            {{ if .Site.Params.contact.email }}
+              <p>
+                <a href="mailto:{{ .Site.Params.contact.email }}" class="hover:underline hover:decoration-primary-400 hover:text-primary-500">
+                  {{ .Site.Params.contact.email }}
+                </a>
+              </p>
+            {{ end }}
+            {{ if .Site.Params.contact.phone }}
+              <p>
+                <a href="tel:{{ .Site.Params.contact.phone }}" class="hover:underline hover:decoration-primary-400 hover:text-primary-500">
+                  {{ .Site.Params.contact.phone }}
+                </a>
+              </p>
+            {{ end }}
+            {{ if .Site.Params.contact.address }}
+              <p>{{ .Site.Params.contact.address }}</p>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      
+      {{/* Copyright và Powered By ở dưới */}}
+      <div class="border-t border-neutral-200 dark:border-neutral-800 pt-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
+          {{/* Copyright */}}
+          <div>
+            {{ if .Site.Params.footer.showCopyright | default true }}
+              <p class="text-sm text-neutral-500 dark:text-neutral-400">
+                {{- with replace .Site.Params.copyright "{ year }" now.Year }}
+                  {{ . | markdownify }}
+                {{- else }}
+                  &copy;
+                  {{ now.Format "2006" }}
+                  {{ .Site.Params.Author.name | markdownify }}
+                {{- end }}
+              </p>
+            {{ end }}
+          </div>
+          
+          {{/* Powered By */}}
+          <div>
+            {{ if .Site.Params.footer.showThemeAttribution | default true }}
+              <p class="text-sm text-neutral-500 dark:text-neutral-400">
+                {{ $hugo := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+                  href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>`
+                }}
+                {{ $blowfish := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+                  href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>`
+                }}
+                {{ i18n "footer.powered_by" (dict "Hugo" $hugo "Theme" $blowfish) | safeHTML }}
+              </p>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+{{ if not .Site.Params.disableImageZoom | default true }}
+      <script>
+        mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+          margin: 24,
+          background: "rgba(0,0,0,0.5)",
+          scrollOffset: 0,
+        });
+      </script>
+    {{ end }}
+    {{ $jsProcess := resources.Get "js/process.js" }}
+    {{ $jsProcess = $jsProcess | resources.Minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+    <script
+      type="text/javascript"
+      src="{{ $jsProcess.RelPermalink }}"
+      integrity="{{ $jsProcess.Data.Integrity }}"></script>
+    {{/* Extend footer - eg. for extra scripts, etc. */}}
+    {{ if templates.Exists "partials/extend-footer.html" }}
+      {{ partialCached "extend-footer.html" . }}
+    {{ end }}
+  </footer>
+
+  
