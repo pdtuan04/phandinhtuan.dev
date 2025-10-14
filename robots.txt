@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://phandinhtuan.dev/sitemap.xml
