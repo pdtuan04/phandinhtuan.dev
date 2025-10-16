@@ -4,7 +4,6 @@ showDate: false
 showWordCount: false
 showReadingTime: false
 ---
-***
 # About Me
 {{< lead >}}
 Xin chào, tôi là Phan Đình Tuấn. Tôi là một nhà phát triển phần mềm với niềm đam mê kiến tạo nên những giải pháp công nghệ vững chắc và ý nghĩa. Với tôi, mỗi dòng code không chỉ là logic, mà còn là một bước trên hành trình không ngừng học hỏi và chinh phục những thách thức kỹ thuật phức tạp.
