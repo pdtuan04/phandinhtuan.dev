@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+    <style>
+    .anhmodau {
+      display: block;           /* biến ảnh thành block để có thể căn giữa */
+      margin: 0 auto;           /* căn giữa theo chiều ngang */
+      max-width: 60%;          /* ảnh không vượt quá chiều rộng của vùng chứa */
+      height: auto;             /* tự động điều chỉnh chiều cao theo tỉ lệ gốc */
+      border-radius: 12px;      /* tuỳ chọn: bo góc nhẹ cho đẹp */
+    }
+
+    /* Tuỳ chọn: căn giữa trong khối section và thêm khoảng cách */
+    section {
+      text-align: center;
+    }
+    </style>
+  <article class="max-w-full">
+    <header>
+      {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
+        {{ partial "breadcrumbs.html" . }}
+      {{ end }}
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        {{ .Title | emojify }}
+      </h1>
+    </header>
+    
+    <img class="anhmodau"src="pic_1.png">
+    <section class="max-w-full prose dark:prose-invert"style="text-align:left;">
+      {{ .Content }}
+    </section>
+    
+    <footer class="pt-8">
+      {{ partial "sharing-links.html" . }}
+    </footer>
+  </article>
+{{ end }}

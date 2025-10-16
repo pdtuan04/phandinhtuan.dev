@@ -2,23 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Network on Phan Đình Tuấn</title>
-    <link>https://pdtuan04.github.io/phandinhtuan.dev/tags/network/</link>
+    <link>http://localhost:1313/phandinhtuan.dev/tags/network/</link>
     <description>Recent content in Network on Phan Đình Tuấn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>pdtuan04@gmail.com (Phan Đình Tuấn)</managingEditor>
     <webMaster>pdtuan04@gmail.com (Phan Đình Tuấn)</webMaster>
     <copyright>© 2025 Phan Đình Tuấn. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pdtuan04.github.io/phandinhtuan.dev/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/phandinhtuan.dev/tags/network/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>TCP: Giao Thức Đáng Tin Cậy Của Internet</title>
-      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/tcp/</link>
+      <link>http://localhost:1313/phandinhtuan.dev/posts/tcp/</link>
       <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/tcp/</guid>
+      <guid>http://localhost:1313/phandinhtuan.dev/posts/tcp/</guid>
       <description>TCP (Giao thức Điều khiển Truyền vận) là một giao thức Internet thiết yếu, đảm bảo dữ liệu được gửi đi một cách đáng tin cậy và đúng thứ tự bằng cách kiểm tra lỗi và tự động gửi lại các gói tin bị mất, nền tảng cho các dịch vụ quan trọng như duyệt web và email.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/tcp/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/tcp/featured.png" />
+    </item>
+    
+    <item>
+      <title>UDP: </title>
+      <link>http://localhost:1313/phandinhtuan.dev/posts/udp/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
+      <guid>http://localhost:1313/phandinhtuan.dev/posts/udp/</guid>
+      <description>UDP</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/udp/featured.png" />
     </item>
     
   </channel>
