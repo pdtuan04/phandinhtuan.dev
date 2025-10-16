@@ -32,6 +32,16 @@
     </item>
     
     <item>
+      <title>UDP: </title>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/udp/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/udp/</guid>
+      <description>UDP</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/udp/featured.png" />
+    </item>
+    
+    <item>
       <title>Config</title>
       <link>http://localhost:1313/phandinhtuan.dev/posts/multithread/</link>
       <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
@@ -58,7 +68,11 @@
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
       <guid>http://localhost:1313/phandinhtuan.dev/posts/socket/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
+<<<<<<< HEAD
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/socket/feature.png" />
+=======
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/socket/feature.png" />
+>>>>>>> 0c8199eda6ee972f8ecd45b1013fa8b60662643e
     </item>
     
   </channel>

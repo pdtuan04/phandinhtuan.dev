@@ -38,7 +38,11 @@
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
       <guid>http://localhost:1313/phandinhtuan.dev/posts/socket/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
+<<<<<<< HEAD
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/socket/feature.png" />
+=======
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/socket/feature.png" />
+>>>>>>> 0c8199eda6ee972f8ecd45b1013fa8b60662643e
     </item>
     
   </channel>
