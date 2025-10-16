@@ -1,0 +1,78 @@
+{{ define "main" }}
+    <style>
+    .anhmodau {
+      width: 100%;
+      
+      /* Mẹo giữ ảnh luôn là hình vuông để bo tròn không bị méo */
+      aspect-ratio: 1 / 1;
+      
+      /* Các thuộc tính làm tròn ảnh */
+      border-radius: 50%; 
+      object-fit: cover; /* Đảm bảo ảnh lấp đầy mà không bị méo */
+    }
+
+    /* Tuỳ chọn: căn giữa trong khối section và thêm khoảng cách */
+    section {
+      text-align: left;
+    }
+    .chutieude{
+      text-align: center;
+      font-weight: bold;
+      font-size: 4.2em;
+      margin: 0;
+    }
+    .nutdownload{
+      background-color: #3b82f6; /* Tương đương bg-blue-500 */
+      color: white;
+display: inline-block;
+      /* Kích thước và khoảng cách */
+      padding: 10px 20px; /* Tương đương py-2.5 px-5 */
+
+      /* Chữ và Font */
+      font-weight: bold;
+      font-size: 16px;
+
+      /* Hình dáng và Viền */
+      border: none; /* Bỏ viền mặc định của trình duyệt */
+      border-radius: 8px; /* Tương đương rounded-lg */
+
+      /* Hiệu ứng */
+      cursor: pointer; /* Biến con trỏ thành hình bàn tay */
+      transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền mượt mà */
+    }
+    .btn-nutdownload:hover {
+      background-color: #1d4ed8; /* Màu xanh đậm hơn, tương đương bg-blue-700 */
+    }
+    </style>
+  <article class="max-w-full">
+    <header>
+      {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
+        {{ partial "breadcrumbs.html" . }}
+      {{ end }}
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        {{ .Title | emojify }}
+      </h1>
+    </header>
+    <section class="max-w-full mt-6 prose dark:prose-invert">
+      
+      <div class="flex gap-6 items-center">
+
+        <div class="w-1/2">
+          <img class="anhmodau"src="con.png">
+        </div>
+
+        <div class="w-1/2 text-center">
+          <p class="chutieude">HỒ SƠ NĂNG LỰC</p>
+          <a href="EthicalHackerUpdate20251016-31-xbc9q8.pdf" class="nutdownload" target="_blank">
+            Download My CV Now
+          </a>
+        </div>
+
+      </div>
+      {{ .Content }}
+    </section>
+    <footer class="pt-8">
+      {{ partial "sharing-links.html" . }}
+    </footer>
+  </article>
+{{ end }}

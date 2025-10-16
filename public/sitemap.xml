@@ -21,6 +21,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://pdtuan04.github.io/phandinhtuan.dev/posts/udp/</loc>
+    <lastmod>2025-10-14T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://pdtuan04.github.io/phandinhtuan.dev/posts/multithread/</loc>
     <lastmod>2022-09-04T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -39,8 +45,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pdtuan04.github.io/phandinhtuan.dev/posts/udp_tcp/</loc>
-    <lastmod>2022-09-04T00:00:00+00:00</lastmod>
+    <loc>https://pdtuan04.github.io/phandinhtuan.dev/aboutme/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pdtuan04.github.io/phandinhtuan.dev/resume/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

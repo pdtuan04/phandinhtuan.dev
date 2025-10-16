@@ -3,3 +3,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .gallery-container-small {
+  max-width: 70%; /* Chiều rộng tối đa là 70% so với khung chứa. Bạn có thể đổi thành 60%, 80% hoặc một giá trị cố định như 800px */
+  margin: 0 auto; /* Đây là dòng quan trọng để căn giữa khối gallery sau khi đã thu nhỏ */
+}

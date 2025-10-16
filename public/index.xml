@@ -22,6 +22,16 @@
     </item>
     
     <item>
+      <title>UDP: </title>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/udp/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/udp/</guid>
+      <description>UDP</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/udp/featured.png" />
+    </item>
+    
+    <item>
       <title>Config</title>
       <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/multithread/</link>
       <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
@@ -52,13 +62,23 @@
     </item>
     
     <item>
-      <title>Super cool article that I wrote</title>
-      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/udp_tcp/</link>
-      <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/aboutme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/udp_tcp/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/udp_tcp/featured.png" />
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/aboutme/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/aboutme/feature.svg" />
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/resume/</guid>
+      <description></description>
+      
     </item>
     
   </channel>

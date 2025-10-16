@@ -11,6 +11,11 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
+  name = "Homepage"
+  pageRef = "/"
+  weight = 5
+
+[[main]]
   name = "All Post"
   pageRef = "posts"
   weight = 10
@@ -18,7 +23,7 @@
 [[main]]
   name = "About Me"
   weight = 20
-  pageRef = "about"
+  pageRef = "aboutme"
 
 [[main]]
   name = "About"
@@ -27,9 +32,9 @@
   weight = 20
 
 [[main]]
-  name = "example sub-menu 2"
+  name = "Hồ Sơ Năng Lực"
   parent = "About Me"
-  pageRef = "posts"
+  pageRef = "resume"
   weight = 20
 
 #[[subnavigation]]
