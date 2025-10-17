@@ -4,7 +4,7 @@ showDate: false
 showWordCount: false
 showReadingTime: false
 ---
-# About Me
+# Giới Thiệu Bản Thân
 {{< lead >}}
 Xin chào, tôi là Phan Đình Tuấn. Tôi là một nhà phát triển phần mềm với niềm đam mê kiến tạo nên những giải pháp công nghệ vững chắc và ý nghĩa. Với tôi, mỗi dòng code không chỉ là logic, mà còn là một bước trên hành trình không ngừng học hỏi và chinh phục những thách thức kỹ thuật phức tạp.
 
@@ -16,5 +16,5 @@ Trong công việc, tôi luôn nỗ lực hết mình và tin rằng chất lư�
 
 Dù phần lớn thời gian gắn bó với máy tính và những dòng code, tôi vẫn trân trọng những khoảng thời gian riêng để đọc các bài viết chuyên sâu về công nghệ hoặc nghe một bản nhạc yêu thích. Sở thích của tôi là sưu tầm những giải pháp kỹ thuật hay, những kiến trúc hệ thống độc đáo, chúng không chỉ phản ánh tư duy của tôi mà còn là nguồn động lực để tôi tiến về phía trước.
 
-Hiện tại, tôi đang tìm kiếm một môi trường năng động, chuyên nghiệp, nơi cho phép tôi được học hỏi và phát triển. Vui lòng dành chút thời gian để xem qua [resume]({{< relref "/resume" >}}) và [portfolio](LINK_DEN_PORTFOLIO_CUA_BAN) của tôi, và đừng ngần ngại [liên hệ](LINK_DEN_TRANG_LIEN_HE) với tôi nhé.
+Hiện tại, tôi đang tìm kiếm một môi trường năng động, chuyên nghiệp, nơi cho phép tôi được học hỏi và phát triển. Vui lòng dành chút thời gian để xem qua [hồ sơ năng lực]({{< relref "/resume" >}}) của tôi, và đừng ngần ngại [liên hệ](LINK_DEN_TRANG_LIEN_HE) với tôi nhé.
 {{< /lead >}}

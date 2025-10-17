@@ -11,32 +11,35 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Homepage"
+  name = "Trang Chủ"
   pageRef = "/"
   weight = 5
 
 [[main]]
-  name = "All Post"
+  name = "Bài Viết"
   pageRef = "posts"
   weight = 10
 
 [[main]]
-  name = "About Me"
+  name = "Về Tôi"
   weight = 20
   pageRef = "aboutme"
 
 [[main]]
-  name = "About"
-  parent = "About Me"
-  pageRef = "about"
+  name = "Giới Thiệu"
+  parent = "Về Tôi"
+  pageRef = "aboutme"
   weight = 20
 
 [[main]]
   name = "Hồ Sơ Năng Lực"
-  parent = "About Me"
+  parent = "Về Tôi"
   pageRef = "resume"
   weight = 20
-
+[[main]]
+  name = "Liên Hệ"
+  pageRef = "posts"
+  weight = 25
 #[[subnavigation]]
 #  name = "An interesting topic"
 #  pageRef = "tags/interesting-topic"

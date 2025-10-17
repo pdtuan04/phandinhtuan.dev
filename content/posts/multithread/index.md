@@ -1,28 +1,237 @@
 ---
-title: "Config"
+title: "Đa Luồng: Khi Máy Tính Của Bạn Mọc Thêm Tay"
 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna."
 categories: ["Post","Blog",]
 tags: ["post","lorem","ipsum"]
 #externalUrl: ""
 #showSummary: true
-date: 2022-09-04
+date: 2025-10-17
 draft: false
 smartTOC: true
 ---
+{{< lead >}}
+Chào bạn! Hôm nay chúng ta sẽ khám phá một khái niệm nghe có vẻ phức tạp trong Java: Multithreading (lập trình đa luồng). Nhưng đừng lo, tôi sẽ giải thích nó theo cách đơn giản nhất, như thể bạn đang xem một bộ phim hoạt hình vậy.
+{{< /lead >}}
+## Đơn Luồng | Bạn Là Một Đầu Bếp Đơn Độc 
+![lonely chef](chef.jpg)
+{{< lead >}}
+Hãy hình dung bạn là một đầu bếp trong một nhà hàng nhỏ, và bạn phải làm tất cả mọi việc.
 
-## Lorem ipsum dolor sit amet
+Khi có khách gọi món, quy trình của bạn là:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna. Nulla venenatis volutpat libero, in laoreet leo fringilla eget. Etiam consequat sed nisi sit amet interdum. Pellentesque ullamcorper at turpis in ultrices. Pellentesque et elit mauris. Aenean eu augue sit amet nunc interdum ultricies. Aenean eleifend consectetur sapien vitae consectetur. Donec risus mauris, finibus at condimentum at, lacinia sit amet neque. Nulla facilisi. Suspendisse sollicitudin dolor quis eros tempor, a tempus ex varius.
+- Nhận đơn hàng.
 
-### Nunc non leo non magna
+- Đi vào bếp, chuẩn bị và nấu món ăn.
 
-Nunc non leo non magna ornare condimentum. Phasellus consequat nunc ut tellus porttitor bibendum. In pharetra ullamcorper metus quis mollis. Mauris bibendum, est in commodo hendrerit, dolor purus hendrerit dolor, at pharetra sapien erat sit amet ante. Etiam aliquet euismod libero, vel tincidunt felis mollis at. Sed scelerisque, tortor in convallis auctor, elit quam consectetur lacus, quis posuere risus libero non sem. Mauris sagittis nisi id aliquam lacinia. Vivamus finibus velit sed condimentum aliquet. Nullam in ante a erat lacinia semper. Curabitur pretium justo at leo maximus, quis dignissim nulla posuere. Donec eget consectetur neque, et mattis dui. Vivamus at mi enim. Nullam et nisi est. Nullam eget eros blandit, convallis odio eget, ornare enim.
+- Mang món ăn ra cho khách.
 
-## Quisque ultricies
-Quisque ultricies tincidunt sem nec tincidunt. Aenean nibh diam, dapibus varius ornare nec, suscipit ut arcu. Integer ut elit sollicitudin, fermentum ipsum nec, tempus eros. Donec hendrerit facilisis maximus. Pellentesque eu mi ipsum. Vivamus diam tellus, varius sed dolor at, finibus tempus lorem. Morbi sed mauris quis enim vehicula hendrerit. Sed et sollicitudin est. Maecenas scelerisque ligula ac purus gravida, et feugiat nibh blandit. Integer id quam ac arcu convallis interdum eget sed libero. Aliquam varius est quis efficitur efficitur. Cras id turpis magna. Aenean cursus, libero auctor ullamcorper vestibulum, nisl risus consectetur nisi, ut molestie enim libero sed ipsum.
+- Quay lại bếp dọn dẹp.
 
-### Etiam sollicitudin
-Etiam sollicitudin, ante ac fermentum varius, lorem ante congue mi, auctor dictum magna sem sed nibh. In et est id neque gravida aliquet quis a felis. Mauris tempor lectus ut gravida ornare. Curabitur at elementum tortor, in feugiat elit. Aenean auctor diam ut egestas rhoncus. Quisque tristique venenatis risus vitae suscipit. Nunc feugiat purus sed dolor gravida, non ullamcorper metus suscipit. Sed et tortor odio. Pellentesque at scelerisque nulla. In ut aliquam metus. Vivamus congue augue at pellentesque rhoncus. Donec a lectus tincidunt, aliquet libero sit amet, commodo arcu. Vivamus hendrerit quis augue eu lacinia. Sed sodales velit condimentum eros varius vulputate.
+Mọi thứ diễn ra tuần tự. Nếu có 3 bàn khách cùng gọi món, bạn phải làm xong cho bàn thứ nhất rồi mới đến bàn thứ hai, rồi mới đến bàn thứ ba. Các vị khách đến sau sẽ phải chờ dài cổ. Đây chính là cách một chương trình đơn luồng (single-thread) hoạt động. Nó chỉ làm được một việc tại một thời điểm.
+{{< /lead >}}
+## Đa Luồng | Bạn Tuyển Thêm Nhân Viên
+{{< lead >}}
+Giờ thì nhà hàng của bạn phát đạt hơn. Bạn quyết định thuê thêm 2 phụ bếp nữa. Mọi chuyện bây giờ hoàn toàn khác:
 
-## Proin tempor lorem
-Proin tempor lorem quam, ac maximus lectus sodales et. Sed laoreet orci vel metus luctus lobortis. Nam ex velit, vehicula id tristique sed, blandit eu nisi. Quisque semper libero nec massa malesuada congue. In faucibus lorem at diam fringilla, vel viverra magna lobortis. Ut commodo est urna, ut aliquet enim sagittis ut. Nulla posuere arcu sed lobortis accumsan. Phasellus fringilla dolor id est lobortis feugiat. Quisque enim elit, faucibus a mauris non, mattis aliquet orci. Nunc sagittis viverra erat, id condimentum lacus suscipit quis.
+Bạn (Đầu bếp chính): Chuyên nhận đơn hàng và giám sát.
+
+Phụ bếp A: Chuyên sơ chế nguyên liệu.
+
+Phụ bếp B: Chuyên nấu nướng và trình bày.
+
+Khi 3 bàn khách cùng gọi món, bạn có thể nhận cả 3 đơn gần như cùng lúc, phụ bếp A bắt đầu sơ chế ngay lập tức, và phụ bếp B thì nấu ngay khi có nguyên liệu. Mọi thứ diễn ra song song. Nhà hàng của bạn phục vụ nhanh hơn gấp nhiều lần.
+
+Đó chính là Multithreading!
+
+Tóm lại: Một chương trình đa luồng giống như một nhà bếp có nhiều đầu bếp. Mỗi "đầu bếp" được gọi là một Thread (luồng). Toàn bộ chương trình (nhà hàng) có thể xử lý nhiều công việc (nấu nhiều món) cùng một lúc, giúp tăng hiệu suất và tốc độ đáng kể.
+{{< /lead >}}
+## Làm Sao Để "Thuê Phụ Bếp" (Tạo Thread) Trong Java?
+{{< lead >}}
+Trong Java, bạn có thể "thuê phụ bếp" (tạo một thread) theo hai cách phổ biến.
+
+Cách 1: "Truyền nhân" - Kế thừa từ lớp Thread
+Cách này giống như bạn dạy nghề cho con trai mình. Bạn tạo một lớp mới và cho nó "kế thừa" mọi kỹ năng của một Thread cha.
+
+Cách làm:
+
+Tạo một class mới kế thừa từ java.lang.Thread.
+
+Ghi đè (override) phương thức run(). Đây là nơi bạn định nghĩa những việc mà "phụ bếp" này sẽ làm.
+
+Để bắt đầu, bạn gọi phương thức start().
+
+Ví dụ: Hãy tạo một "phụ bếp" có nhiệm vụ thái 5 củ cà rốt.
+
+Java
+```
+// Phụ bếp này tên là KitchenHelper, được đào tạo từ lớp Thread cha
+class KitchenHelper extends Thread {
+    private String name;
+
+    public KitchenHelper(String name) {
+        this.name = name;
+    }
+
+    // Đây là công việc của phụ bếp: thái cà rốt
+    @Override
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(this.name + " đã thái xong củ cà rốt thứ: " + i);
+            try {
+                // Giả vờ nghỉ 1 giây để thái củ tiếp theo
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                // Xử lý nếu có lỗi
+            }
+        }
+    }
+}
+
+public class Restaurant {
+    public static void main(String[] args) {
+        // Thuê 2 phụ bếp
+        KitchenHelper helper1 = new KitchenHelper("Tuấn");
+        KitchenHelper helper2 = new KitchenHelper("Đình");
+
+        // Yêu cầu họ bắt đầu làm việc!
+        helper1.start();
+        helper2.start();
+    }
+}
+```
+
+Nếu bạn chạy đoạn code trên, bạn sẽ thấy Tuấn và Đình thái cà rốt xen kẽ nhau. Họ đang làm việc song song!
+
+Cách 2: "Người làm thuê" - Implement interface Runnable
+
+Cách này linh hoạt hơn. Thay vì tạo ra một "phụ bếp" chính hiệu, bạn chỉ cần viết ra một "bản mô tả công việc" (gọi là Runnable), rồi đưa bản mô tả này cho một Thread bất kỳ để họ thực hiện.
+
+Đây là cách được khuyến khích sử dụng nhiều hơn vì Java không cho kế thừa từ nhiều lớp, nên việc "implement" sẽ giúp code của bạn linh hoạt hơn.
+
+Ví dụ: Cùng công việc thái 5 củ cà rốt.
+
+Java
+```
+// Đây là "bản mô tả công việc"
+class TaskThaiCarrot implements Runnable {
+    private String tenNguoiLam;
+
+    public TaskThaiCarrot(String tenNguoiLam) {
+        this.tenNguoiLam = tenNguoiLam;
+    }
+
+    // Công việc cần làm được viết ở đây
+    @Override
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(this.tenNguoiLam + " đang thực hiện công việc, củ thứ: " + i);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                // Xử lý lỗi
+            }
+        }
+    }
+}
+
+public class Restaurant {
+    public static void main(String[] args) {
+        // Tạo ra 2 bản mô tả công việc
+        TaskThaiCarrot task1 = new TaskThaiCarrot("Nhiệm vụ của Tuấn");
+        TaskThaiCarrot task2 = new TaskThaiCarrot("Nhiệm vụ của Đình");
+
+        // Thuê 2 "Thread" và giao việc cho họ
+        Thread worker1 = new Thread(task1);
+        Thread worker2 = new Thread(task2);
+
+        // Bắt đầu làm việc
+        worker1.start();
+        worker2.start();
+    }
+}
+```
+Kết quả cũng tương tự, nhưng cách tổ chức code này gọn gàng và dễ mở rộng hơn.
+{{< /lead >}}
+## Synchronized: Khi Các Phụ Bếp Tranh Giành Một Cái Chảo
+{{< lead >}}
+Quay lại căn bếp. Giả sử bạn chỉ có một cái chảo chống dính duy nhất. Cả Tuấn và Đình đều cần nó để chiên trứng.
+
+Tình huống xấu:
+
+Tuấn kiểm tra, thấy cái chảo đang rảnh.
+
+Ngay lúc đó, Đình cũng kiểm tra, cũng thấy cái chảo rảnh.
+
+Tuấn đặt chảo lên bếp và đập trứng vào.
+
+Đình không biết Tuấn vừa lấy, cũng chạy tới và đập trứng của mình vào cùng cái chảo đó.
+
+Kết quả: Món trứng chiên hỗn loạn, không ra hình thù gì!
+
+Vấn đề này trong lập trình gọi là Race Condition (Tranh chấp tài nguyên). Nó xảy ra khi nhiều luồng cùng truy cập và thay đổi một tài nguyên dùng chung (biến, đối tượng, file...).
+
+Giải Pháp: "Ai Dùng Thì Khóa Lại" (Synchronized) 🔑
+Để giải quyết, bạn ra quy định: "Ai muốn dùng cái chảo thì phải cầm lấy nó và khóa cửa bếp lại. Dùng xong, rửa sạch rồi mới được mở khóa cho người khác vào".
+
+Trong Java, cơ chế khóa đó chính là từ khóa synchronized.
+
+Khi một phương thức hoặc một khối lệnh được đánh dấu là synchronized, nó đảm bảo rằng tại một thời điểm, chỉ có duy nhất một luồng được phép thực thi nó trên cùng một đối tượng. Các luồng khác muốn vào phải xếp hàng chờ đến lượt.
+
+Ví dụ: Quản lý số lượng món ăn đã hoàn thành.
+
+Java
+```
+class CounterMonAn {
+    private int soMonDaHoanThanh = 0;
+
+    // Chỉ một người được vào đây cập nhật số lượng tại một thời điểm
+    public synchronized void hoanThanhThemMon() {
+        int hienTai = soMonDaHoanThanh;
+        System.out.println(Thread.currentThread().getName() + " thấy có " + hienTai + " món đã xong, chuẩn bị thêm 1.");
+        soMonDaHoanThanh = hienTai + 1;
+        System.out.println("=> Tổng cộng đã xong: " + soMonDaHoanThanh + " món.");
+    }
+
+    public int getSoMonDaHoanThanh() {
+        return soMonDaHoanThanh;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) throws InterruptedException {
+        CounterMonAn counter = new CounterMonAn();
+
+        Runnable task = () -> {
+            for (int i = 0; i < 100; i++) {
+                counter.hoanThanhThemMon();
+            }
+        };
+
+        Thread dauBepA = new Thread(task, "Đầu bếp A");
+        Thread dauBepB = new Thread(task, "Đầu bếp B");
+
+        dauBepA.start();
+        dauBepB.start();
+
+        // Chờ cả 2 đầu bếp làm xong việc
+        dauBepA.join();
+        dauBepB.join();
+
+        System.out.println("Cuối ngày, tổng số món đã hoàn thành là: " + counter.getSoMonDaHoanThanh()); // Kết quả sẽ luôn là 200
+    }
+}
+```
+Nếu bạn bỏ từ khóa synchronized đi, kết quả cuối cùng có thể sẽ không phải là 200, vì hai luồng sẽ "giẫm chân" lên nhau khi cập nhật biến soMonDaHoanThanh.
+
+Kết Luận
+Vậy là bạn đã hiểu những ý tưởng cốt lõi của multithreading rồi đấy!
+
+Multithreading là cho phép chương trình làm nhiều việc cùng lúc, như có nhiều đầu bếp trong bếp.
+
+Một Thread giống như một đầu bếp.
+
+Bạn có thể tạo Thread bằng cách extends Thread hoặc implements Runnable (khuyến khích dùng cách thứ hai).
+
+Khi nhiều thread dùng chung tài nguyên (cái chảo), hãy dùng synchronized để tránh tranh giành và gây ra lỗi.
+Hy vọng qua ví dụ về nhà bếp, bạn đã thấy multithreading không hề đáng sợ. Nó là một công cụ cực kỳ mạnh mẽ để làm cho ứng dụng của bạn chạy nhanh và hiệu quả hơn rất nhiều!
+{{< /lead >}}
