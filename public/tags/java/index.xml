@@ -42,6 +42,16 @@
     </item>
     
     <item>
+      <title>Multicast: Khi Bạn Nói Chuyện Một Nhóm, Nhưng Chỉ Ai Muốn Nghe Mới Nghe Thấy</title>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/multicast/</link>
+      <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
+      <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/multicast/</guid>
+      <description>Giải thích Multicast là việc gửi thông tin đến một nhóm người nhận đã đăng ký, như kênh radio nội bộ. Hiệu quả hơn Unicast/Broadcast, nó được dùng trong IPTV, game online, và thị trường chứng khoán để tiết kiệm băng thông và đảm bảo tốc độ.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/multicast/feature.png" />
+    </item>
+    
+    <item>
       <title>TCP: Người Giao Hàng &#39;Chắc Cú&#39; Nhất Quả Đất</title>
       <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/tcp/</link>
       <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>

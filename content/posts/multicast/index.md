@@ -2,7 +2,7 @@
 title: "Multicast: Khi Bạn Nói Chuyện Một Nhóm, Nhưng Chỉ Ai Muốn Nghe Mới Nghe Thấy"
 summary: "Giải thích Multicast là việc gửi thông tin đến một nhóm người nhận đã đăng ký, như kênh radio nội bộ. Hiệu quả hơn Unicast/Broadcast, nó được dùng trong IPTV, game online, và thị trường chứng khoán để tiết kiệm băng thông và đảm bảo tốc độ."
 categories: ["Post","Blog",]
-tags: ["post","lorem","ipsum"]
+tags: ["post","java"]
 #externalUrl: ""
 #showSummary: true
 date: 2025-10-17
