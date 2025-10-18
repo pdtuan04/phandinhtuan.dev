@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on PhanDinhTuan</title>
-    <link>http://localhost:1313/phandinhtuan.dev/tags/java/</link>
+    <link>https://pdtuan04.github.io/phandinhtuan.dev/tags/java/</link>
     <description>Recent content in Java on PhanDinhTuan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>pdtuan04@gmail.com (Phan Đình Tuấn)</managingEditor>
     <webMaster>pdtuan04@gmail.com (Phan Đình Tuấn)</webMaster>
     <copyright>© 2025 Phan Đình Tuấn. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 18 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/phandinhtuan.dev/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pdtuan04.github.io/phandinhtuan.dev/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Java RMI: Gọi Phương Thức Từ Xa Dễ Dàng</title>
-      <link>http://localhost:1313/phandinhtuan.dev/posts/rmi/</link>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/rmi/</link>
       <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>http://localhost:1313/phandinhtuan.dev/posts/rmi/</guid>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/rmi/</guid>
       <description>Giới thiệu Java RMI như điều khiển từ xa để gọi phương thức của đối tượng trên máy tính khác. Giải thích 4 thành phần chính (Interface, Object, Server, Registry) và ví dụ code minh họa việc gọi hàm từ xa.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/rmi/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/rmi/feature.png" />
     </item>
     
     <item>
       <title>Đa Luồng: Khi Máy Tính Của Bạn Mọc Thêm Tay</title>
-      <link>http://localhost:1313/phandinhtuan.dev/posts/multithread/</link>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/multithread/</link>
       <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>http://localhost:1313/phandinhtuan.dev/posts/multithread/</guid>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/multithread/</guid>
       <description>Giải thích Java Multithreading bằng ẩn dụ nhà bếp với đầu bếp (luồng) làm việc song song. Hướng dẫn tạo luồng (Thread/Runnable) và dùng synchronized để tránh tranh giành tài nguyên (dữ liệu chung).</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/multithread/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/multithread/feature.png" />
     </item>
     
     <item>
       <title>InetAddress, URL, URLConnection: Từ Tra Cứu, Ghi Địa Chỉ, Đến Gửi Thư</title>
-      <link>http://localhost:1313/phandinhtuan.dev/posts/qlnoimang/</link>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/qlnoimang/</link>
       <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>http://localhost:1313/phandinhtuan.dev/posts/qlnoimang/</guid>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/qlnoimang/</guid>
       <description>Từ tọa độ IP đến cuộc trò chuyện mạng: hành trình khám phá InetAddress, URL và URLConnection trong Java.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/qlnoimang/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/qlnoimang/feature.jpg" />
     </item>
     
     <item>
       <title>TCP: Người Giao Hàng &#39;Chắc Cú&#39; Nhất Quả Đất</title>
-      <link>http://localhost:1313/phandinhtuan.dev/posts/tcp/</link>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/tcp/</link>
       <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>http://localhost:1313/phandinhtuan.dev/posts/tcp/</guid>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/tcp/</guid>
       <description>Giải thích TCP bằng ẩn dụ &amp;lsquo;cuộc điện thoại&amp;rsquo;: tin cậy, có kết nối, đảm bảo thứ tự. Trái ngược với UDP (&amp;lsquo;bưu thiếp&amp;rsquo; tốc độ). Hoàn hảo cho các ứng dụng yêu cầu sự toàn vẹn dữ liệu như web, email.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/tcp/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/tcp/feature.jpg" />
     </item>
     
   </channel>

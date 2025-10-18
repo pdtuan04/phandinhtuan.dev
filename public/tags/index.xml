@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on PhanDinhTuan</title>
-    <link>http://localhost:1313/phandinhtuan.dev/tags/</link>
+    <link>https://pdtuan04.github.io/phandinhtuan.dev/tags/</link>
     <description>Recent content in Tags on PhanDinhTuan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>pdtuan04@gmail.com (Phan Đình Tuấn)</managingEditor>
     <webMaster>pdtuan04@gmail.com (Phan Đình Tuấn)</webMaster>
     <copyright>© 2025 Phan Đình Tuấn. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 18 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/phandinhtuan.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pdtuan04.github.io/phandinhtuan.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Java</title>
-      <link>http://localhost:1313/phandinhtuan.dev/tags/java/</link>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/tags/java/</link>
       <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>http://localhost:1313/phandinhtuan.dev/tags/java/</guid>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/tags/java/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Post</title>
-      <link>http://localhost:1313/phandinhtuan.dev/tags/post/</link>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/tags/post/</link>
       <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>http://localhost:1313/phandinhtuan.dev/tags/post/</guid>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/tags/post/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Ipsum</title>
-      <link>http://localhost:1313/phandinhtuan.dev/tags/ipsum/</link>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/tags/ipsum/</link>
       <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>http://localhost:1313/phandinhtuan.dev/tags/ipsum/</guid>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/tags/ipsum/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Lorem</title>
-      <link>http://localhost:1313/phandinhtuan.dev/tags/lorem/</link>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/tags/lorem/</link>
       <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>http://localhost:1313/phandinhtuan.dev/tags/lorem/</guid>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/tags/lorem/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Network</title>
-      <link>http://localhost:1313/phandinhtuan.dev/tags/network/</link>
+      <link>https://pdtuan04.github.io/phandinhtuan.dev/tags/network/</link>
       <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>http://localhost:1313/phandinhtuan.dev/tags/network/</guid>
+      <guid>https://pdtuan04.github.io/phandinhtuan.dev/tags/network/</guid>
       <description></description>
       
     </item>
