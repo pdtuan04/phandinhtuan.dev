@@ -12,7 +12,7 @@ smartTOC: true
 {{< lead >}}
 Chào bạn! Hôm nay chúng ta sẽ khám phá một khái niệm nghe có vẻ phức tạp trong Java: Multithreading (lập trình đa luồng). Nhưng đừng lo, tôi sẽ giải thích nó theo cách đơn giản nhất, như thể bạn đang xem một bộ phim hoạt hình vậy.
 {{< /lead >}}
-## Đơn Luồng | Bạn Là Một Đầu Bếp Đơn Độc 
+## Đơn Luồng | Bạn Là Một Đầu Bếp Đơn Độc
 ![lonely chef](chef.jpg)
 {{< lead >}}
 Hãy hình dung bạn là một đầu bếp trong một nhà hàng nhỏ, và bạn phải làm tất cả mọi việc.
