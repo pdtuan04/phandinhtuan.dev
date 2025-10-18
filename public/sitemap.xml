@@ -3,78 +3,78 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://pdtuan04.github.io/phandinhtuan.dev/</loc>
+    <loc>http://localhost:1313/phandinhtuan.dev/</loc>
+    <lastmod>2025-10-18T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/phandinhtuan.dev/posts/</loc>
+    <lastmod>2025-10-18T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/phandinhtuan.dev/posts/rmi/</loc>
+    <lastmod>2025-10-18T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/phandinhtuan.dev/posts/multithread/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pdtuan04.github.io/phandinhtuan.dev/posts/</loc>
+    <loc>http://localhost:1313/phandinhtuan.dev/posts/qlnoimang/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pdtuan04.github.io/phandinhtuan.dev/posts/multithread/</loc>
+    <loc>http://localhost:1313/phandinhtuan.dev/posts/networkbasic/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pdtuan04.github.io/phandinhtuan.dev/posts/networkbasic/</loc>
+    <loc>http://localhost:1313/phandinhtuan.dev/posts/osi/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pdtuan04.github.io/phandinhtuan.dev/posts/osi/</loc>
+    <loc>http://localhost:1313/phandinhtuan.dev/posts/multicast/</loc>
     <lastmod>2025-10-17T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pdtuan04.github.io/phandinhtuan.dev/posts/multicast/</loc>
-    <lastmod>2025-10-17T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://pdtuan04.github.io/phandinhtuan.dev/posts/qlnoimang/</loc>
-    <lastmod>2025-10-17T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://pdtuan04.github.io/phandinhtuan.dev/posts/tcp/</loc>
+    <loc>http://localhost:1313/phandinhtuan.dev/posts/tcp/</loc>
     <lastmod>2025-10-14T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pdtuan04.github.io/phandinhtuan.dev/posts/udp/</loc>
+    <loc>http://localhost:1313/phandinhtuan.dev/posts/udp/</loc>
     <lastmod>2025-10-14T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pdtuan04.github.io/phandinhtuan.dev/posts/rmi/</loc>
-    <lastmod>2025-09-04T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/phandinhtuan.dev/posts/io/</loc>
+    <lastmod>2025-10-04T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pdtuan04.github.io/phandinhtuan.dev/posts/io/</loc>
-    <lastmod>2025-09-04T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/phandinhtuan.dev/aboutme/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pdtuan04.github.io/phandinhtuan.dev/aboutme/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://pdtuan04.github.io/phandinhtuan.dev/resume/</loc>
+    <loc>http://localhost:1313/phandinhtuan.dev/resume/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

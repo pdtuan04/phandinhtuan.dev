@@ -1,84 +1,64 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post on Phan Đình Tuấn</title>
-    <link>https://pdtuan04.github.io/phandinhtuan.dev/tags/post/</link>
-    <description>Recent content in Post on Phan Đình Tuấn</description>
+    <title>Post on PhanDinhTuan</title>
+    <link>http://localhost:1313/phandinhtuan.dev/tags/post/</link>
+    <description>Recent content in Post on PhanDinhTuan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>pdtuan04@gmail.com (Phan Đình Tuấn)</managingEditor>
     <webMaster>pdtuan04@gmail.com (Phan Đình Tuấn)</webMaster>
     <copyright>© 2025 Phan Đình Tuấn. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 17 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://pdtuan04.github.io/phandinhtuan.dev/tags/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/phandinhtuan.dev/tags/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Đa Luồng: Khi Máy Tính Của Bạn Mọc Thêm Tay</title>
-      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/multithread/</link>
-      <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
+      <title>Java RMI: Gọi Phương Thức Từ Xa Dễ Dàng</title>
+      <link>http://localhost:1313/phandinhtuan.dev/posts/rmi/</link>
+      <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/multithread/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/multithread/feature.png" />
+      <guid>http://localhost:1313/phandinhtuan.dev/posts/rmi/</guid>
+      <description>Giới thiệu Java RMI như điều khiển từ xa để gọi phương thức của đối tượng trên máy tính khác. Giải thích 4 thành phần chính (Interface, Object, Server, Registry) và ví dụ code minh họa việc gọi hàm từ xa.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/rmi/feature.png" />
     </item>
     
     <item>
       <title>Mạng Máy Tính Cơ Bản: Dễ Như Gửi Một Bức Thư !</title>
-      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/networkbasic/</link>
+      <link>http://localhost:1313/phandinhtuan.dev/posts/networkbasic/</link>
       <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/networkbasic/</guid>
+      <guid>http://localhost:1313/phandinhtuan.dev/posts/networkbasic/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/networkbasic/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/networkbasic/feature.png" />
     </item>
     
     <item>
       <title>Mô Hình Mạng Máy Tính: Dây Chuyền Gửi Hàng Toàn Cầu</title>
-      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/osi/</link>
+      <link>http://localhost:1313/phandinhtuan.dev/posts/osi/</link>
       <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/osi/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/osi/feature.png" />
+      <guid>http://localhost:1313/phandinhtuan.dev/posts/osi/</guid>
+      <description>Giải thích mô hình OSI 7 tầng bằng ví dụ đơn giản về một dây chuyền gửi hàng, mô tả cách dữ liệu được đóng gói qua từng lớp để chuẩn hóa giao tiếp mạng.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/osi/feature.png" />
     </item>
     
     <item>
       <title>Multicast: Khi Bạn Nói Chuyện Một Nhóm, Nhưng Chỉ Ai Muốn Nghe Mới Nghe Thấy</title>
-      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/multicast/</link>
+      <link>http://localhost:1313/phandinhtuan.dev/posts/multicast/</link>
       <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/multicast/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/multicast/feature.png" />
-    </item>
-    
-    <item>
-      <title>Quản Lý Kết Nối Mạng: Từ Tọa Độ GPS Đến Cuộc Trò Chuyện Hoàn Chỉnh</title>
-      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/qlnoimang/</link>
-      <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
-      <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/qlnoimang/</guid>
-      <description>Từ tọa độ IP đến cuộc trò chuyện mạng: hành trình khám phá InetAddress, URL và URLConnection trong Java.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/qlnoimang/feature.jpg" />
-    </item>
-    
-    <item>
-      <title>Java RMI: Gọi Phương Thức Từ Xa Dễ Dàng</title>
-      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/rmi/</link>
-      <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
-      <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/rmi/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/rmi/feature.png" />
+      <guid>http://localhost:1313/phandinhtuan.dev/posts/multicast/</guid>
+      <description>Giải thích Multicast là việc gửi thông tin đến một nhóm người nhận đã đăng ký, như kênh radio nội bộ. Hiệu quả hơn Unicast/Broadcast, nó được dùng trong IPTV, game online, và thị trường chứng khoán để tiết kiệm băng thông và đảm bảo tốc độ.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/multicast/feature.png" />
     </item>
     
     <item>
       <title>Luồng Nhập/Xuất (I/O Streams) Trong Java</title>
-      <link>https://pdtuan04.github.io/phandinhtuan.dev/posts/io/</link>
-      <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
+      <link>http://localhost:1313/phandinhtuan.dev/posts/io/</link>
+      <pubDate>Sat, 04 Oct 2025 00:00:00 +0000</pubDate>
       <author>pdtuan04@gmail.com (Phan Đình Tuấn)</author>
-      <guid>https://pdtuan04.github.io/phandinhtuan.dev/posts/io/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://pdtuan04.github.io/phandinhtuan.dev/posts/io/feature.png" />
+      <guid>http://localhost:1313/phandinhtuan.dev/posts/io/</guid>
+      <description>Bài viết giải thích Java I/O Streams qua ví dụ đường ống nước, phân biệt rõ Byte Streams (cho file nhị phân) và Character Streams (cho file text). Bài viết cũng nhấn mạnh việc dùng các lớp Buffered (bộ đệm) để tăng hiệu suất đọc/ghi file.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/phandinhtuan.dev/posts/io/feature.png" />
     </item>
     
   </channel>

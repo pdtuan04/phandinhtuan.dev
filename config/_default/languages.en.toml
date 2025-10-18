@@ -2,7 +2,7 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Phan Đình Tuấn"
+title = "PhanDinhTuan"
 
 [params]
   displayName = "EN"

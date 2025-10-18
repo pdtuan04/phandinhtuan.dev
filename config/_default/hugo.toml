@@ -76,22 +76,23 @@ enableEmoji = true
   name = "Phan Đình Tuấn"
 
 [params.footer]
-  slogan = "Học tập không ngừng, chia sẻ không giới hạn 🚀"
+  slogan = "NGƯỜI DUY NHẤT BẠN CẦN VƯỢT QUA LÀ CHÍNH BẠN NGÀY HÔM QUA."
   showMenu = true
   showCopyright = true
   showThemeAttribution = true
 
 [params.contact]
   email = "pdtuan04@gmail.com"
-  phone = "+84 987 654 321"
-  address = "Hà Nội, Việt Nam"
+  phone = "+84 919 955 439"
+  address = "Phường Bảo Vinh, Tỉnh Đồng Nai, Việt Nam."
+  facebook = "https://www.facebook.com/pdtuaans55/"
 
 [params]
   copyright = "© { year } Phan Đình Tuấn. All rights reserved."
   customCSS = ["css/custom.css"]
 
 [[menus.footer]]
-  name = "Quick Links"
-  url = "#"
+  name = "Bài Viết"
+  url = "posts"
   weight = 1
 

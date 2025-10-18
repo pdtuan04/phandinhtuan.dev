@@ -4,7 +4,7 @@
   dir="ltr"
   class="scroll-smooth"
   data-default-appearance="dark"
-  data-auto-appearance="true"><head>
+  data-auto-appearance="true"><head><script src="/phandinhtuan.dev/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=phandinhtuan.dev/livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   
     <meta http-equiv="content-language" content="en">
@@ -14,15 +14,15 @@
   <meta name="theme-color">
 
   
-  <title>Luồng Nhập/Xuất (I/O Streams) Trong Java &middot; Phan Đình Tuấn</title>
-    <meta name="title" content="Luồng Nhập/Xuất (I/O Streams) Trong Java &middot; Phan Đình Tuấn">
+  <title>Luồng Nhập/Xuất (I/O Streams) Trong Java &middot; PhanDinhTuan</title>
+    <meta name="title" content="Luồng Nhập/Xuất (I/O Streams) Trong Java &middot; PhanDinhTuan">
 
   
-  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.">
-  <meta name="keywords" content="post,lorem,ipsum,">
+  <meta name="description" content="Bài viết giải thích Java I/O Streams qua ví dụ đường ống nước, phân biệt rõ Byte Streams (cho file nhị phân) và Character Streams (cho file text). Bài viết cũng nhấn mạnh việc dùng các lớp Buffered (bộ đệm) để tăng hiệu suất đọc/ghi file.">
+  <meta name="keywords" content="post,">
   
   
-  <link rel="canonical" href="https://pdtuan04.github.io/phandinhtuan.dev/posts/io/">
+  <link rel="canonical" href="http://localhost:1313/phandinhtuan.dev/posts/io/">
   
   
   
@@ -100,27 +100,25 @@
   
 
   
-  <meta property="og:url" content="https://pdtuan04.github.io/phandinhtuan.dev/posts/io/">
-  <meta property="og:site_name" content="Phan Đình Tuấn">
+  <meta property="og:url" content="http://localhost:1313/phandinhtuan.dev/posts/io/">
+  <meta property="og:site_name" content="PhanDinhTuan">
   <meta property="og:title" content="Luồng Nhập/Xuất (I/O Streams) Trong Java">
-  <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.">
+  <meta property="og:description" content="Bài viết giải thích Java I/O Streams qua ví dụ đường ống nước, phân biệt rõ Byte Streams (cho file nhị phân) và Character Streams (cho file text). Bài viết cũng nhấn mạnh việc dùng các lớp Buffered (bộ đệm) để tăng hiệu suất đọc/ghi file.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-09-04T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-09-04T00:00:00+00:00">
+    <meta property="article:published_time" content="2025-10-04T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-04T00:00:00+00:00">
     <meta property="article:tag" content="Post">
-    <meta property="article:tag" content="Lorem">
-    <meta property="article:tag" content="Ipsum">
-    <meta property="og:image" content="https://pdtuan04.github.io/phandinhtuan.dev/posts/io/feature.png">
+    <meta property="og:image" content="http://localhost:1313/phandinhtuan.dev/posts/io/feature.png">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://pdtuan04.github.io/phandinhtuan.dev/posts/io/feature.png">
+  <meta name="twitter:image" content="http://localhost:1313/phandinhtuan.dev/posts/io/feature.png">
   <meta name="twitter:title" content="Luồng Nhập/Xuất (I/O Streams) Trong Java">
-  <meta name="twitter:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.">
-<meta name="twitter:image" content="https://pdtuan04.github.io/phandinhtuan.dev/posts/io/feature.png">
-    <meta property="og:image" content="https://pdtuan04.github.io/phandinhtuan.dev/posts/io/feature.png">
+  <meta name="twitter:description" content="Bài viết giải thích Java I/O Streams qua ví dụ đường ống nước, phân biệt rõ Byte Streams (cho file nhị phân) và Character Streams (cho file text). Bài viết cũng nhấn mạnh việc dùng các lớp Buffered (bộ đệm) để tăng hiệu suất đọc/ghi file.">
+<meta name="twitter:image" content="http://localhost:1313/phandinhtuan.dev/posts/io/feature.png">
+    <meta property="og:image" content="http://localhost:1313/phandinhtuan.dev/posts/io/feature.png">
   <script type="application/ld+json">
   [{
     "@context": "https://schema.org",
@@ -129,23 +127,23 @@
     "name": "Luồng Nhập\/Xuất (I\/O Streams) Trong Java",
     "headline": "Luồng Nhập\/Xuất (I\/O Streams) Trong Java",
     
-    "abstract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in eleifend justo, vestibulum congue lacus. Quisque est libero, lacinia sed placerat ac, interdum id urna.",
+    "abstract": "Bài viết giải thích Java I\/O Streams qua ví dụ đường ống nước, phân biệt rõ Byte Streams (cho file nhị phân) và Character Streams (cho file text). Bài viết cũng nhấn mạnh việc dùng các lớp Buffered (bộ đệm) để tăng hiệu suất đọc\/ghi file.",
     "inLanguage": "en",
-    "url" : "https:\/\/pdtuan04.github.io\/phandinhtuan.dev\/posts\/io\/",
+    "url" : "http:\/\/localhost:1313\/phandinhtuan.dev\/posts\/io\/",
     "author" : {
       "@type": "Person",
       "name": "Phan Đình Tuấn"
     },
     "copyrightYear": "2025",
-    "dateCreated": "2025-09-04T00:00:00\u002b00:00",
-    "datePublished": "2025-09-04T00:00:00\u002b00:00",
+    "dateCreated": "2025-10-04T00:00:00\u002b00:00",
+    "datePublished": "2025-10-04T00:00:00\u002b00:00",
     
-    "dateModified": "2025-09-04T00:00:00\u002b00:00",
+    "dateModified": "2025-10-04T00:00:00\u002b00:00",
     
-    "keywords": ["post","lorem","ipsum"],
+    "keywords": ["post"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "975"
+    "wordCount": "973"
   }]
   </script>
 
@@ -259,7 +257,7 @@
     <nav class="flex space-x-3">
       
         <a href="/phandinhtuan.dev/" class="text-base font-medium text-gray-500 hover:text-gray-900">
-          Phan Đình Tuấn
+          PhanDinhTuan
         </a>
       
     </nav>
@@ -594,7 +592,7 @@
     
     <img
       id="background-image"
-      src="/phandinhtuan.dev/posts/io/feature_hu_ef3f22cbc3420b6e.png"
+      src="/phandinhtuan.dev/posts/io/feature_hu_3f0ea981d96ed9cd.png"
       alt="Background Image"
       class="absolute inset-0 w-full h-full object-cover">
     <div
@@ -708,7 +706,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-09-04T00:00:00&#43;00:00">4 September 2025</time><span class="px-2 text-primary-500">&middot;</span><span>975 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+      <time datetime="2025-10-04T00:00:00&#43;00:00">4 October 2025</time><span class="px-2 text-primary-500">&middot;</span><span>973 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
     
 
     
@@ -850,8 +848,8 @@
   <ul>
     <li><a href="#hai-loại-đường-ống-cơ-bản">Hai Loại Đường Ống Cơ Bản</a>
       <ul>
-        <li><a href="#1-byte-streams-đường-ống-nước-thô-">1. Byte Streams: Đường Ống Nước Thô 💧</a></li>
-        <li><a href="#2-character-streams-đường-ống-có-bộ-lọc-thông-minh-">2. Character Streams: Đường Ống Có Bộ Lọc Thông Minh ⚙️</a></li>
+        <li><a href="#1-byte-streams-đường-ống-nước-thô">1. Byte Streams: Đường Ống Nước Thô</a></li>
+        <li><a href="#2-character-streams-đường-ống-có-bộ-lọc-thông-minh">2. Character Streams: Đường Ống Có Bộ Lọc Thông Minh</a></li>
       </ul>
     </li>
     <li><a href="#siêu-năng-lực-của-các-phụ-kiện-lắp-ghép-decorator-pattern">Siêu Năng Lực Của Các &ldquo;Phụ Kiện&rdquo; Lắp Ghép (Decorator Pattern)</a>
@@ -876,8 +874,8 @@
   <ul>
     <li><a href="#hai-loại-đường-ống-cơ-bản">Hai Loại Đường Ống Cơ Bản</a>
       <ul>
-        <li><a href="#1-byte-streams-đường-ống-nước-thô-">1. Byte Streams: Đường Ống Nước Thô 💧</a></li>
-        <li><a href="#2-character-streams-đường-ống-có-bộ-lọc-thông-minh-">2. Character Streams: Đường Ống Có Bộ Lọc Thông Minh ⚙️</a></li>
+        <li><a href="#1-byte-streams-đường-ống-nước-thô">1. Byte Streams: Đường Ống Nước Thô</a></li>
+        <li><a href="#2-character-streams-đường-ống-có-bộ-lọc-thông-minh">2. Character Streams: Đường Ống Có Bộ Lọc Thông Minh</a></li>
       </ul>
     </li>
     <li><a href="#siêu-năng-lực-của-các-phụ-kiện-lắp-ghép-decorator-pattern">Siêu Năng Lực Của Các &ldquo;Phụ Kiện&rdquo; Lắp Ghép (Decorator Pattern)</a>
@@ -987,14 +985,39 @@
         
 
         <div class="article-content max-w-prose mb-20">
-          <p>Chào bạn! Mọi chương trình máy tính hữu ích đều cần giao tiếp với thế giới bên ngoài: đọc một file, lấy dữ liệu từ mạng, nhận thông tin từ bàn phím, hoặc ghi kết quả ra màn hình. Trong Java, tất cả những hoạt động này được thực hiện thông qua một khái niệm mạnh mẽ và đồng nhất gọi là Streams (Luồng).</p>
-<p>Hãy quên đi những định nghĩa phức tạp. Hãy tưởng tượng I/O Streams đơn giản là một hệ thống đường ống nước.</p>
-<p>Nguồn dữ liệu (file, bàn phím, mạng) là một cái hồ chứa nước.</p>
-<p>Đích đến (file, màn hình, mạng) là một cái bể chứa.</p>
-<p>Stream chính là đường ống nối từ hồ đến bể.</p>
-<p>Dữ liệu là dòng nước chảy trong ống.</p>
-<p>Nhập (Input): Bạn đang lắp ống để lấy nước từ hồ về (Đọc dữ liệu).</p>
-<p>Xuất (Output): Bạn đang lắp ống để xả nước vào bể (Ghi dữ liệu).</p>
+          <p><strong>Chào bạn! Mọi chương trình máy tính hữu ích đều cần giao tiếp với thế giới bên ngoài: đọc một file, lấy dữ liệu từ mạng, nhận thông tin từ bàn phím, hoặc ghi kết quả ra màn hình. Trong Java, tất cả những hoạt động này được thực hiện thông qua một khái niệm mạnh mẽ và đồng nhất gọi là Streams (Luồng).</strong>
+
+
+
+
+
+
+
+<figure>
+      <img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="AnhMinhHoa"
+    srcset="
+      /phandinhtuan.dev/posts/io/io_s_hu_387d05448afacea4.png  330w,
+      /phandinhtuan.dev/posts/io/io_s_hu_829018f171fecf8f.png  660w,
+      /phandinhtuan.dev/posts/io/io_s_hu_32fd3c0148a9789d.png 1280w
+    "
+    data-zoom-src="/phandinhtuan.dev/posts/io/io_s.png"
+    src="/phandinhtuan.dev/posts/io/io_s.png">
+
+  
+</figure>
+
+<strong>Hãy quên đi những định nghĩa phức tạp. Hãy tưởng tượng I/O Streams đơn giản là một hệ thống đường ống nước.</strong></p>
+<p><strong>Nguồn dữ liệu (file, bàn phím, mạng) là một cái hồ chứa nước.</strong></p>
+<p><strong>Đích đến (file, màn hình, mạng) là một cái bể chứa.</strong></p>
+<p><strong>Stream chính là đường ống nối từ hồ đến bể.</strong></p>
+<p><strong>Dữ liệu là dòng nước chảy trong ống.</strong></p>
+<p><strong>Nhập (Input): Bạn đang lắp ống để lấy nước từ hồ về (Đọc dữ liệu).</strong></p>
+<p><strong>Xuất (Output): Bạn đang lắp ống để xả nước vào bể (Ghi dữ liệu).</strong></p>
 
 <h2 class="relative group">Hai Loại Đường Ống Cơ Bản 
     <div id="hai-loại-đường-ống-cơ-bản" class="anchor"></div>
@@ -1005,33 +1028,33 @@
     </span>        
     
 </h2>
-<p>Trong thế giới Java I/O, có hai loại &ldquo;chất liệu&rdquo; ống chính mà bạn phải chọn.</p>
+<p><strong>Trong thế giới Java I/O, có hai loại &ldquo;chất liệu&rdquo; ống chính mà bạn phải chọn.</strong></p>
 
-<h3 class="relative group">1. Byte Streams: Đường Ống Nước Thô 💧 
-    <div id="1-byte-streams-đường-ống-nước-thô-" class="anchor"></div>
+<h3 class="relative group">1. Byte Streams: Đường Ống Nước Thô 
+    <div id="1-byte-streams-đường-ống-nước-thô" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#1-byte-streams-%c4%91%c6%b0%e1%bb%9dng-%e1%bb%91ng-n%c6%b0%e1%bb%9bc-th%c3%b4-" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#1-byte-streams-%c4%91%c6%b0%e1%bb%9dng-%e1%bb%91ng-n%c6%b0%e1%bb%9bc-th%c3%b4" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<p>Tên gọi: Các lớp có đuôi là InputStream (nhập) và OutputStream (xuất). Ví dụ: FileInputStream, FileOutputStream.</p>
-<p>Công dụng: Đây là loại ống cơ bản nhất, vận chuyển nước ở dạng nguyên bản nhất của nó – từng byte một. Nó không quan tâm &ldquo;nước&rdquo; đó là gì, có thể là nước uống, nước bùn, nước màu&hellip;</p>
-<p>Khi nào dùng: Hoàn hảo để vận chuyển dữ liệu không phải là văn bản, như hình ảnh, file âm thanh, video, file đã mã hóa. Bất cứ thứ gì mà việc đọc từng ký tự không có ý nghĩa.</p>
+<p><strong>Tên gọi: Các lớp có đuôi là InputStream (nhập) và OutputStream (xuất). Ví dụ: FileInputStream, FileOutputStream.</strong></p>
+<p><strong>Công dụng: Đây là loại ống cơ bản nhất, vận chuyển nước ở dạng nguyên bản nhất của nó – từng byte một. Nó không quan tâm &ldquo;nước&rdquo; đó là gì, có thể là nước uống, nước bùn, nước màu&hellip;</strong></p>
+<p><strong>Khi nào dùng: Hoàn hảo để vận chuyển dữ liệu không phải là văn bản, như hình ảnh, file âm thanh, video, file đã mã hóa. Bất cứ thứ gì mà việc đọc từng ký tự không có ý nghĩa.</strong></p>
 
-<h3 class="relative group">2. Character Streams: Đường Ống Có Bộ Lọc Thông Minh ⚙️ 
-    <div id="2-character-streams-đường-ống-có-bộ-lọc-thông-minh-" class="anchor"></div>
+<h3 class="relative group">2. Character Streams: Đường Ống Có Bộ Lọc Thông Minh 
+    <div id="2-character-streams-đường-ống-có-bộ-lọc-thông-minh" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#2-character-streams-%c4%91%c6%b0%e1%bb%9dng-%e1%bb%91ng-c%c3%b3-b%e1%bb%99-l%e1%bb%8dc-th%c3%b4ng-minh-" aria-label="Anchor">#</a>
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#2-character-streams-%c4%91%c6%b0%e1%bb%9dng-%e1%bb%91ng-c%c3%b3-b%e1%bb%99-l%e1%bb%8dc-th%c3%b4ng-minh" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<p>Tên gọi: Các lớp có đuôi là Reader (nhập) và Writer (xuất). Ví dụ: FileReader, FileWriter.</p>
-<p>Công dụng: Đây là loại ống cao cấp hơn, có gắn sẵn một &ldquo;bộ lọc&rdquo; thông minh. Nó nhận vào dòng nước thô (bytes) và tự động chuyển đổi nó thành nước uống sạch (ký tự - characters). Bộ lọc này biết cách xử lý các bảng mã ký tự phức tạp như UTF-8 hay ASCII.</p>
-<p>Khi nào dùng: Luôn luôn sử dụng loại ống này khi bạn làm việc với dữ liệu văn bản (text files). Nó giúp bạn tránh được các lỗi hiển thị ký tự (ví dụ: &ldquo;Nguyễn Văn A&rdquo; bị biến thành &ldquo;Nguy?n V?n A&rdquo;).</p>
+<p><strong>Tên gọi: Các lớp có đuôi là Reader (nhập) và Writer (xuất). Ví dụ: FileReader, FileWriter.</strong></p>
+<p><strong>Công dụng: Đây là loại ống cao cấp hơn, có gắn sẵn một &ldquo;bộ lọc&rdquo; thông minh. Nó nhận vào dòng nước thô (bytes) và tự động chuyển đổi nó thành nước uống sạch (ký tự - characters). Bộ lọc này biết cách xử lý các bảng mã ký tự phức tạp như UTF-8 hay ASCII.</strong></p>
+<p><strong>Khi nào dùng: Luôn luôn sử dụng loại ống này khi bạn làm việc với dữ liệu văn bản (text files). Nó giúp bạn tránh được các lỗi hiển thị ký tự (ví dụ: &ldquo;Nguyễn Văn A&rdquo; bị biến thành &ldquo;Nguy?n V?n A&rdquo;).</strong></p>
 
 <h2 class="relative group">Siêu Năng Lực Của Các &ldquo;Phụ Kiện&rdquo; Lắp Ghép (Decorator Pattern) 
     <div id="siêu-năng-lực-của-các-phụ-kiện-lắp-ghép-decorator-pattern" class="anchor"></div>
@@ -1042,9 +1065,9 @@
     </span>        
     
 </h2>
-<p>Điều tuyệt vời nhất (và cũng hơi rối rắm nhất) của Java I/O là bạn có thể lắp ghép các loại ống và phụ kiện lại với nhau để tạo ra một đường ống siêu mạnh.</p>
-<p>Hãy tưởng tượng cái ống FileInputStream cơ bản giống như một cái ống hút nhỏ. Bạn phải hút từng giọt nước một từ hồ. Rất chậm và mệt mỏi!</p>
-<p>Để giải quyết, Java cung cấp các &ldquo;phụ kiện&rdquo; (các lớp Wrapper) để bọc bên ngoài ống cơ bản.</p>
+<p><strong>Điều tuyệt vời nhất (và cũng hơi rối rắm nhất) của Java I/O là bạn có thể lắp ghép các loại ống và phụ kiện lại với nhau để tạo ra một đường ống siêu mạnh.</strong></p>
+<p><strong>Hãy tưởng tượng cái ống FileInputStream cơ bản giống như một cái ống hút nhỏ. Bạn phải hút từng giọt nước một từ hồ. Rất chậm và mệt mỏi!</strong>
+<strong>Để giải quyết, Java cung cấp các &ldquo;phụ kiện&rdquo; (các lớp Wrapper) để bọc bên ngoài ống cơ bản.</strong></p>
 
 <h3 class="relative group">Phụ Kiện Phổ Biến Nhất: Buffered&hellip; (Bể Chứa Đệm) 
     <div id="phụ-kiện-phổ-biến-nhất-buffered-bể-chứa-đệm" class="anchor"></div>
@@ -1055,10 +1078,10 @@
     </span>        
     
 </h3>
-<p>Tên gọi: BufferedInputStream, BufferedReader, BufferedOutputStream, BufferedWriter.</p>
-<p>Công dụng: Thay vì lắp ống hút thẳng xuống hồ, bạn lắp một cái thùng chứa (buffer) ở giữa. Phụ kiện này sẽ múc một xô nước đầy từ hồ lên thùng chứa một lần. Sau đó, bạn chỉ cần lấy nước từ cái thùng đó thôi, nhanh hơn rất nhiều.</p>
-<p>Cách hoạt động: Thay vì đọc/ghi từng byte/ký tự một từ ổ đĩa (một thao tác rất chậm), Buffered&hellip; sẽ đọc/ghi một khối dữ liệu lớn vào bộ nhớ đệm một lần, giúp tăng hiệu suất lên đáng kể.</p>
-<p>Quy tắc vàng: Luôn luôn bọc các luồng I/O cơ bản của bạn bằng một luồng Buffered tương ứng! new BufferedReader(new FileReader(&ldquo;data.txt&rdquo;));</p>
+<p><strong>Tên gọi: BufferedInputStream, BufferedReader, BufferedOutputStream, BufferedWriter.</strong></p>
+<p><strong>Công dụng: Thay vì lắp ống hút thẳng xuống hồ, bạn lắp một cái thùng chứa (buffer) ở giữa. Phụ kiện này sẽ múc một xô nước đầy từ hồ lên thùng chứa một lần. Sau đó, bạn chỉ cần lấy nước từ cái thùng đó thôi, nhanh hơn rất nhiều.</strong></p>
+<p><strong>Cách hoạt động: Thay vì đọc/ghi từng byte/ký tự một từ ổ đĩa (một thao tác rất chậm), Buffered&hellip; sẽ đọc/ghi một khối dữ liệu lớn vào bộ nhớ đệm một lần, giúp tăng hiệu suất lên đáng kể.</strong></p>
+<p><strong>Quy tắc vàng: Luôn luôn bọc các luồng I/O cơ bản của bạn bằng một luồng Buffered tương ứng! new BufferedReader(new FileReader(&ldquo;data.txt&rdquo;));</strong></p>
 
 <h2 class="relative group">Code Ví Dụ Kinh Điển: Đọc và Ghi File Text 
     <div id="code-ví-dụ-kinh-điển-đọc-và-ghi-file-text" class="anchor"></div>
@@ -1069,7 +1092,7 @@
     </span>        
     
 </h2>
-<p>Hãy xem cách xây dựng một &ldquo;hệ thống đường ống&rdquo; hoàn chỉnh để đọc nội dung từ file này và ghi sang file khác, sử dụng các phụ kiện tốt nhất.</p>
+<p><strong>Hãy xem cách xây dựng một &ldquo;hệ thống đường ống&rdquo; hoàn chỉnh để đọc nội dung từ file này và ghi sang file khác, sử dụng các phụ kiện tốt nhất.</strong></p>
 <p>Java</p>
 <pre tabindex="0"><code>import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -1125,12 +1148,12 @@ public class FileIOExample {
     </span>        
     
 </h2>
-<p>Quản lý luồng Nhập/Xuất trong Java ban đầu có thể trông đáng sợ với rất nhiều lớp khác nhau, nhưng khi bạn nắm được tư tưởng cốt lõi:</p>
-<p>Luồng là đường ống dữ liệu.</p>
-<p>Chọn đúng loại ống: Byte Streams cho file nhị phân (ảnh, video), Character Streams cho file văn bản.</p>
-<p>Luôn lắp thêm phụ kiện Buffered&hellip; để tăng tốc độ.</p>
-<p>Luôn dùng try-with-resources để quản lý đường ống một cách an toàn và tự động.</p>
-<p>Bạn sẽ thấy rằng việc xử lý dữ liệu trong Java trở nên rất logic và linh hoạt.</p>
+<p><strong>Quản lý luồng Nhập/Xuất trong Java ban đầu có thể trông đáng sợ với rất nhiều lớp khác nhau, nhưng khi bạn nắm được tư tưởng cốt lõi:</strong></p>
+<p><strong>Luồng là đường ống dữ liệu.</strong></p>
+<p><strong>Chọn đúng loại ống: Byte Streams cho file nhị phân (ảnh, video), Character Streams cho file văn bản.</strong></p>
+<p><strong>Luôn lắp thêm phụ kiện Buffered&hellip; để tăng tốc độ.</strong></p>
+<p><strong>Luôn dùng try-with-resources để quản lý đường ống một cách an toàn và tự động.</strong></p>
+<p><strong>Bạn sẽ thấy rằng việc xử lý dữ liệu trong Java trở nên rất logic và linh hoạt.</strong></p>
 
           
           
@@ -1178,14 +1201,14 @@ public class FileIOExample {
         </span>
         <span>
           
-            <a class="flex text-right group ml-3" href="/phandinhtuan.dev/posts/rmi/">
+            <a class="flex text-right group ml-3" href="/phandinhtuan.dev/posts/udp/">
               <span class="flex flex-col">
                 <span class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Java RMI: Gọi Phương Thức Từ Xa Dễ Dàng</span
+                  >UDP: Gã Giao Hàng Siêu Tốc Nhưng... Dễ Mất Hàng.</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2025-09-04T00:00:00&#43;00:00">4 September 2025</time>
+                    <time datetime="2025-10-14T00:00:00&#43;00:00">14 October 2025</time>
                   
                 </span>
               </span>
@@ -1228,17 +1251,17 @@ public class FileIOExample {
     }
     h4 { font-size: 1.5rem; }
     
+    
 </style>
 <footer id="site-footer" class="py-10 print:hidden">
     
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         
-        <div class="text-center">
-          <h4 class="text-base font-semibold text-neutral-700 dark:text-neutral-300 mb-4">Slogan</h4>
-          <p class="text-sm text-neutral-500 dark:text-neutral-400">
-            Học tập không ngừng, chia sẻ không giới hạn 🚀
-          </p>
+        <div class="text-center md:text-left">
+          <h4 class="text-xl font-semibold text-neutral-700 dark:text-neutral-300 mb-4">
+            NGƯỜI DUY NHẤT BẠN CẦN VƯỢT QUA LÀ CHÍNH BẠN NGÀY HÔM QUA.
+          </h4>
         </div>
     
         
@@ -1246,16 +1269,36 @@ public class FileIOExample {
           
             
               <nav class="flex flex-col">
-                <h4 class="text-base font-semibold text-neutral-700 dark:text-neutral-300 mb-4">Quick Links</h4>
+                <h4 class="text-base font-semibold text-neutral-700 dark:text-neutral-300 mb-4">Truy Cập Nhanh</h4>
                 <ul class="flex flex-col list-none space-y-2">
                   
                     <li>
                       <a
-                        class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 text-neutral-500 dark:text-neutral-400 inline-flex items-center"
-                        href=""
-                        title="">
+                        class="text-xl hover:underline hover:decoration-primary-400 hover:text-primary-500"
+                        href="/phandinhtuan.dev/tags/"
+                        title="Tags">
                         
-                        Quick Links
+                        Thẻ
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a
+                        class="text-xl hover:underline hover:decoration-primary-400 hover:text-primary-500"
+                        href="/phandinhtuan.dev/categories/"
+                        title="Categories">
+                        
+                        Danh Mục
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a
+                        class="text-xl hover:underline hover:decoration-primary-400 hover:text-primary-500"
+                        href="/phandinhtuan.dev/posts/"
+                        title="Bài viết">
+                        
+                        Bài Viết
                       </a>
                     </li>
                   
@@ -1268,23 +1311,30 @@ public class FileIOExample {
         
         <div class="text-center">
           <h4 class="text-base font-semibold text-neutral-700 dark:text-neutral-300 mb-4">Contact</h4>
-          <div class="text-sm text-neutral-500 dark:text-neutral-400 space-y-2">
+          <div class="text-xl font-semibold text-neutral-500 dark:text-neutral-400 space-y-2">
             
               <p>
-                <a href="mailto:pdtuan04@gmail.com" class="hover:underline hover:decoration-primary-400 hover:text-primary-500">
+                <a href="mailto:pdtuan04@gmail.com" class="text-xl hover:underline hover:decoration-primary-400 hover:text-primary-500">
                   pdtuan04@gmail.com
                 </a>
               </p>
             
             
               <p>
-                <a href="tel:&#43;84%20987%20654%20321" class="hover:underline hover:decoration-primary-400 hover:text-primary-500">
-                  &#43;84 987 654 321
+                <a href="tel:&#43;84%20919%20955%20439" class="text-xl hover:underline hover:decoration-primary-400 hover:text-primary-500">
+                  &#43;84 919 955 439
                 </a>
               </p>
             
             
-              <p>Hà Nội, Việt Nam</p>
+              <p>
+                <a href="https://www.facebook.com/pdtuaans55/" class="text-xl hover:underline hover:decoration-primary-400 hover:text-primary-500">
+                  Facebook
+                </a>
+              </p>
+            
+            
+              <p >Phường Bảo Vinh, Tỉnh Đồng Nai, Việt Nam.</p>
             
           </div>
         </div>
@@ -1331,7 +1381,7 @@ public class FileIOExample {
   <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
-  data-url="https://pdtuan04.github.io/phandinhtuan.dev/">
+  data-url="http://localhost:1313/phandinhtuan.dev/">
   <div
     id="search-modal"
     class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">

@@ -64,18 +64,19 @@
 # the copyright notice. Configure as per the main menu above.
 
 
-# [[footer]]
-#   name = "Tags"
-#   pageRef = "tags"
-#   weight = 10
+ [[footer]]
+   name = "Bài Viết"
+   pageRef = "posts"
+   weight = 30
 
-# [[footer]]
-#   name = "Categories"
-#   pageRef = "categories"
-#   weight = 20
+ [[footer]]
+   name = "Thẻ"
+   pageRef = "tags"
+   weight = 10
+
+ [[footer]]
+   name = "Danh Mục"
+   pageRef = "categories"
+   weight = 20
 
 # Các mục cha (dùng làm tiêu đề cột)
-[[footer]]
-  name = "Quick Links"
-  identifier = "quicklinks"
-  weight = 1
